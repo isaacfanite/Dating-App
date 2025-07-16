@@ -16,12 +16,12 @@ export async function sendVerificationEmail(email: string, token: string) {
     const pLine = "color: #555; font-size: 16px; line-height: 1.5;";
 
     return resend.emails.send({
-        from: "heartbound@resend.dev",
+        from: "Romio@moraluminum.com",
         to: email,
-        subject: "HeartBound - Verification Email",
+        subject: "Romio - Verification Email",
         html: `
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; border: 1px solid #e0e0e0;">
-                <h1 style="color: #333; text-align: center;">Welcome to HeartBound!</h1>
+                <h1 style="color: #333; text-align: center;">Welcome to Romio!</h1>
                 <p style=${pLine}>Hi there,</p>
                 <p style=${pLine}>
                     Thank you for registering. To get started, please confirm your email address by clicking the link below:
@@ -35,11 +35,11 @@ export async function sendVerificationEmail(email: string, token: string) {
                 </p>
                 <p style=${pLine}>
                     Cheers,<br>
-                    <a href="${link}">The HeartBound Team</a>
+                    <a href="${link}">The Romio Team</a>
                 </p>
                 <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 20px 0;">
                 <p style="color: #999; font-size: 12px; text-align: center;">
-                    &copy; ${currentYear} <a href="${link}">HeartBound</a>. All rights reserved.
+                    &copy; ${currentYear} <a href="${link}">Romio</a>. All rights reserved.
                 </p>
             </div>
         `
@@ -59,9 +59,9 @@ export async function sendForgottenPasswordEmail(email: string, token: string) {
     const pLine = "color: #555; font-size: 16px; line-height: 1.5;"
 
     return resend.emails.send({
-        from: "heartbound@resend.dev",
+        from: "Romio@moraluminum.com",
         to: email,
-        subject: "HeartBound - Forgotten Password Email",
+        subject: "Romio - Forgotten Password Email",
         html: `
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; border: 1px solid #e0e0e0;">
                 <h1 style="color: #333; text-align: center;">Reset Password</h1>
@@ -78,11 +78,11 @@ export async function sendForgottenPasswordEmail(email: string, token: string) {
                 </p>
                 <p style=${pLine}>
                     Cheers,<br>
-                    The HeartBound Team
+                    The Romio Team
                 </p>
                 <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 20px 0;">
                 <p style="color: #999; font-size: 12px; text-align: center;">
-                    &copy; ${currentYear} HeartBound. All rights reserved.
+                    &copy; ${currentYear} Romio. All rights reserved.
                 </p>
             </div>
         `
